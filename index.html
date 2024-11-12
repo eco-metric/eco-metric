@@ -1433,8 +1433,7 @@
         </div>
 
         <button id="updateChartBtn">Update Charts</button>
-        <button class="btnClear" id="ClearBtn">Clear</button>
-
+        <button id="btnClear" class="btnClear" onclick="Clear()">Clear</button>
         <h2>Phase Three</h2>
         <div class="charts">
             <div class="chart-container">
@@ -1561,17 +1560,39 @@
                 chart2.update();
             }
         });
+	
 
-       // إضافة حدث عند الضغط على الزر Clear
-       document.getElementById('ClearBtn').addEventListener('click', function() {
-      // إعادة تعيين البيانات على الشارت 1 و 2
-        chart1.data.datasets[0].data = [0, 0, 0, 0]; // تعيين قيم البيانات إلى 0
-       chart2.data.datasets[0].data = [0, 0, 0, 0]; // تعيين قيم البيانات إلى 0
+function Clear() {
+  // مسح كل القيم في الـ TextBoxes
+  const textboxes = document.querySelectorAll('input[type="text"]');
+  textboxes.forEach(box => box.value = '');
 
-       // تحديث الشارتات لعرض التغييرات
-    chart1.update();
-    chart2.update();
-});
+  // تحديث القوائم المنسدلة
+  const selectElements = document.querySelectorAll('select');
+  selectElements.forEach(select => {
+    // تحديد الخيار "Select classification" إذا موجود
+    const classificationOption = [...select.options].find(opt => opt.textContent === 'Select classification');
+    if (classificationOption) {
+      select.value = classificationOption.value;  // تحديد الخيار المطلوب
+    }
+
+    // تحديد الخيار "Select name of material" إذا موجود
+    const materialOption = [...select.options].find(opt => opt.textContent === 'Select name of material');
+    if (materialOption) {
+      select.value = materialOption.value;  // تحديد الخيار المطلوب
+    }
+  });
+
+  // إخفاء الصور الظاهرة في الصفحة
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    if (img.style.display !== 'none') {
+      img.setAttribute('data-src', img.src); // حفظ مصدر الصورة مؤقتاً
+      img.style.display = 'none';  // إخفاء الصورة
+    }
+  });
+
+}
 
 
     </script>
