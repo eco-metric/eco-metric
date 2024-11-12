@@ -102,6 +102,14 @@
             background-color: #003d80;
             transform: scale(0.98);
         }
+
+	  .btnClear{
+		background: rgba(255, 0, 60, 1);
+	  }
+
+	  .btnClear:hover{
+		background: maroon;
+	  }
     </style>
 </head>
 
@@ -1425,6 +1433,7 @@
         </div>
 
         <button id="updateChartBtn">Update Charts</button>
+        <button class="btnClear" id="ClearBtn">Clear</button>
 
         <h2>Phase Three</h2>
         <div class="charts">
@@ -1552,6 +1561,18 @@
                 chart2.update();
             }
         });
+
+       // إضافة حدث عند الضغط على الزر Clear
+       document.getElementById('ClearBtn').addEventListener('click', function() {
+      // إعادة تعيين البيانات على الشارت 1 و 2
+        chart1.data.datasets[0].data = [0, 0, 0, 0]; // تعيين قيم البيانات إلى 0
+       chart2.data.datasets[0].data = [0, 0, 0, 0]; // تعيين قيم البيانات إلى 0
+
+       // تحديث الشارتات لعرض التغييرات
+    chart1.update();
+    chart2.update();
+});
+
 
     </script>
 
