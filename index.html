@@ -102,13 +102,13 @@
             transform: scale(0.98);
         }
 
-	  .btnClear{
-		background: rgba(255, 0, 60, 1);
-	  }
+        .btnClear {
+            background: rgba(255, 0, 60, 1);
+        }
 
-	  .btnClear:hover{
-		background: maroon;
-	  }
+        .btnClear:hover {
+            background: maroon;
+        }
     </style>
 </head>
 
@@ -169,8 +169,8 @@
                 <!-- <input type="text" id="google-map-link" placeholder="Google Map Link" disabled="disabled"> -->
                 <a href="https://www.google.com/maps/@29.9859968,30.916608,13z?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank" style="margin-right: 20px;">Google Maps to calculate distance below</a>
-		<a href="Distances.pdf" target="_blank">Distance Guide</a>
-		<!--<a href="Distances.XLSX" target="_blank">Download Distance Guide</a>-->
+                <a href="Distances.pdf" target="_blank">Distance Guide</a>
+                <!--<a href="Distances.XLSX" target="_blank">Download Distance Guide</a>-->
                 <h3>1) Foundation of material</h3>
 
                 <!-- First Table -->
@@ -1428,6 +1428,43 @@
                             </td>
                         </tr>
                     </table>
+
+                    <table>
+                        <tr style="background-color: white;">
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                            <td style="border:0;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"><label>Total environmental impacts of the building:</label></td>
+                            <td><input id="TotalImpact1" type="text" placeholder="Result" disabled="disabled">
+                            </td>
+                            <td><input id="TotalImpact2" type="text" placeholder="Result" disabled="disabled">
+                            </td>
+                            <td><input id="TotalImpact3" type="text" placeholder="Result" disabled="disabled">
+                            </td>
+                            <td><input id="TotalImpact4" type="text" placeholder="Result" disabled="disabled">
+                            </td>
+                            <td><input id="TotalImpact5" type="text" placeholder="Result" disabled="disabled">
+                            </td>
+                            <td><input id="TotalImpact6" type="text" placeholder="Result" disabled="disabled">
+                            </td>
+                            <td><input id="TotalImpact7" type="text" placeholder="Result" disabled="disabled">
+                            </td>
+                            <td><input id="TotalImpactA4" type="text" placeholder="Result" disabled="disabled">
+                            </td>
+                        </tr>
+                    </table>
                 </form>
             </div>
         </div>
@@ -1560,43 +1597,44 @@
                 chart2.update();
             }
         });
-	
 
-function Clear() {
-  // مسح كل القيم في الـ TextBoxes
-  const textboxes = document.querySelectorAll('input[type="text"]');
-  textboxes.forEach(box => box.value = '');
 
-  // تحديث القوائم المنسدلة
-  const selectElements = document.querySelectorAll('select');
-  selectElements.forEach(select => {
-    // تحديد الخيار "Select classification" إذا موجود
-    const classificationOption = [...select.options].find(opt => opt.textContent === 'Select classification');
-    if (classificationOption) {
-      select.value = classificationOption.value;  // تحديد الخيار المطلوب
-    }
+        function Clear() {
+            // مسح كل القيم في الـ TextBoxes
+            const textboxes = document.querySelectorAll('input[type="text"]');
+            textboxes.forEach(box => box.value = '');
 
-    // تحديد الخيار "Select name of material" إذا موجود
-    const materialOption = [...select.options].find(opt => opt.textContent === 'Select name of material');
-    if (materialOption) {
-      select.value = materialOption.value;  // تحديد الخيار المطلوب
-    }
-  });
+            // تحديث القوائم المنسدلة
+            const selectElements = document.querySelectorAll('select');
+            selectElements.forEach(select => {
+                // تحديد الخيار "Select classification" إذا موجود
+                const classificationOption = [...select.options].find(opt => opt.textContent === 'Select classification');
+                if (classificationOption) {
+                    select.value = classificationOption.value;  // تحديد الخيار المطلوب
+                }
 
-  // إخفاء الصور الظاهرة في الصفحة
-  const images = document.querySelectorAll('img');
-  images.forEach(img => {
-    if (img.style.display !== 'none') {
-      img.setAttribute('data-src', img.src); // حفظ مصدر الصورة مؤقتاً
-      img.style.display = 'none';  // إخفاء الصورة
-    }
-  });
+                // تحديد الخيار "Select name of material" إذا موجود
+                const materialOption = [...select.options].find(opt => opt.textContent === 'Select name of material');
+                if (materialOption) {
+                    select.value = materialOption.value;  // تحديد الخيار المطلوب
+                }
+            });
 
-}
+            // إخفاء الصور الظاهرة في الصفحة
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.style.display !== 'none') {
+                    img.setAttribute('data-src', img.src); // حفظ مصدر الصورة مؤقتاً
+                    img.style.display = 'none';  // إخفاء الصورة
+                }
+            });
+
+        }
 
 
     </script>
 
     <script src="script.js"></script>
 </body>
+
 </html>
