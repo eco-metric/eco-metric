@@ -2275,6 +2275,33 @@ function calculateTotalResults_Window(event) {
 }
 
 
+
+/*
+    // حساب المجموع لآخر صف
+    var totalImpact1 = resultInd1_t7 + resultInd1_t8 + resultInd1_t9;
+    var totalImpact2 = resultInd2_t7 + resultInd2_t8 + resultInd2_t9;
+    var totalImpact3 = resultInd3_t7 + resultInd3_t8 + resultInd3_t9;
+    var totalImpact4 = resultInd4_t7 + resultInd4_t8 + resultInd4_t9;
+    var totalImpact5 = resultInd5_t7 + resultInd5_t8 + resultInd5_t9;
+    var totalImpact6 = resultInd6_t7 + resultInd6_t8 + resultInd6_t9;
+    var totalImpact7 = resultInd7_t7 + resultInd7_t8 + resultInd7_t9;
+    var totalImpactA4 = resultA4_t7 + resultA4_t8 + resultA4_t9;
+
+    // عرض النتائج في الحقول الخاصة بالمجموع
+    document.getElementById("TotalResultInd1_Walls").value = totalInd1.toFixed(2);
+    document.getElementById("TotalResultInd2_Walls").value = totalInd2.toFixed(2);
+    document.getElementById("TotalResultInd3_Walls").value = totalInd3.toFixed(2);
+    document.getElementById("TotalResultInd4_Walls").value = totalInd4.toFixed(2);
+    document.getElementById("TotalResultInd5_Walls").value = totalInd5.toFixed(2);
+    document.getElementById("TotalResultInd6_Walls").value = totalInd6.toFixed(2);
+    document.getElementById("TotalResultInd7_Walls").value = totalInd7.toFixed(2);
+    document.getElementById("TotalResultA4_Walls").value = totalA4.toFixed(2);
+    */
+
+
+
+
+
 // منع فتح أدوات المطورين
 document.addEventListener("keydown", function (e) {
     // منع F12 (أدوات المطور)
