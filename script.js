@@ -2276,27 +2276,37 @@ function calculateTotalResults_Window(event) {
 
 
 
-/*
-    // حساب المجموع لآخر صف
-    var totalImpact1 = resultInd1_t7 + resultInd1_t8 + resultInd1_t9;
-    var totalImpact2 = resultInd2_t7 + resultInd2_t8 + resultInd2_t9;
-    var totalImpact3 = resultInd3_t7 + resultInd3_t8 + resultInd3_t9;
-    var totalImpact4 = resultInd4_t7 + resultInd4_t8 + resultInd4_t9;
-    var totalImpact5 = resultInd5_t7 + resultInd5_t8 + resultInd5_t9;
-    var totalImpact6 = resultInd6_t7 + resultInd6_t8 + resultInd6_t9;
-    var totalImpact7 = resultInd7_t7 + resultInd7_t8 + resultInd7_t9;
-    var totalImpactA4 = resultA4_t7 + resultA4_t8 + resultA4_t9;
+// حساب القيم في آخر صف الخاص بالـ Total Impact
+document.getElementById("btnTtotalImpact").addEventListener("click", function () {
+    // Function to calculate the total for a given set of IDs
+    function calculateTotal(impactId, resultIds) {
+        let total = 0;
+        resultIds.forEach(id => {
+            let value = parseFloat(document.getElementById(id).value) || 0; // Default to 0 if value is empty
+            total += value;
+        });
+        document.getElementById(impactId).value = total.toFixed(2); // Update the TotalImpact field
+    }
 
-    // عرض النتائج في الحقول الخاصة بالمجموع
-    document.getElementById("TotalResultInd1_Walls").value = totalInd1.toFixed(2);
-    document.getElementById("TotalResultInd2_Walls").value = totalInd2.toFixed(2);
-    document.getElementById("TotalResultInd3_Walls").value = totalInd3.toFixed(2);
-    document.getElementById("TotalResultInd4_Walls").value = totalInd4.toFixed(2);
-    document.getElementById("TotalResultInd5_Walls").value = totalInd5.toFixed(2);
-    document.getElementById("TotalResultInd6_Walls").value = totalInd6.toFixed(2);
-    document.getElementById("TotalResultInd7_Walls").value = totalInd7.toFixed(2);
-    document.getElementById("TotalResultA4_Walls").value = totalA4.toFixed(2);
-    */
+    // Define the mappings of TotalImpact fields and their related input fields
+    const mappings = {
+        TotalImpact1: ["TotalResultInd1", "TotalResultInd1_Floor", "TotalResultInd1_Walls", "TotalResultInd1_Window"],
+        TotalImpact2: ["TotalResultInd2", "TotalResultInd2_Floor", "TotalResultInd2_Walls", "TotalResultInd2_Window"],
+        TotalImpact3: ["TotalResultInd3", "TotalResultInd3_Floor", "TotalResultInd3_Walls", "TotalResultInd3_Window"],
+        TotalImpact4: ["TotalResultInd4", "TotalResultInd4_Floor", "TotalResultInd4_Walls", "TotalResultInd4_Window"],
+        TotalImpact5: ["TotalResultInd5", "TotalResultInd5_Floor", "TotalResultInd_Walls", "TotalResultInd5_Window"],
+        TotalImpact6: ["TotalResultInd6", "TotalResultInd6_Floor", "TotalResultInd6_Walls", "TotalResultInd6_Window"],
+        TotalImpact7: ["TotalResultInd7", "TotalResultInd7_Floor", "TotalResultInd_Walls", "TotalResultInd7_Window"],
+        TotalImpactA4: ["TotalResultIndA4", "TotalResultIndA4_Floor", "TotalResultIndA4_Walls", "TotalResultIndA4_Window"]
+    };
+
+    // Iterate over the mappings and calculate totals
+    for (const [impactId, resultIds] of Object.entries(mappings)) {
+        calculateTotal(impactId, resultIds);
+    }
+});
+
+
 
 
 
