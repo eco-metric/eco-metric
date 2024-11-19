@@ -2297,7 +2297,7 @@ document.getElementById("btnTtotalImpact").addEventListener("click", function ()
         TotalImpact5: ["TotalResultInd5", "TotalResultInd5_Floor", "TotalResultInd5_Walls", "TotalResultInd5_Window"],
         TotalImpact6: ["TotalResultInd6", "TotalResultInd6_Floor", "TotalResultInd6_Walls", "TotalResultInd6_Window"],
         TotalImpact7: ["TotalResultInd7", "TotalResultInd7_Floor", "TotalResultInd7_Walls", "TotalResultInd7_Window"],
-        TotalImpactA4: ["TotalResultIndA4", "TotalResultIndA4_Floor", "TotalResultIndA4_Walls", "TotalResultIndA4_Window"]
+        TotalImpactA4: ["TotalResultA4", "TotalResultA4_Floor", "TotalResultA4_Walls", "TotalResultA4_Window"]
     };
 
     // Iterate over the mappings and calculate totals
