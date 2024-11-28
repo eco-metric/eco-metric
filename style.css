@@ -350,14 +350,14 @@ table tr:hover td {
     color: rgb(83, 170, 192);
 }
 
-.floor th, .floor button, .floor h3{
+.floor th, .floor button{
     background: rgb(129, 162, 201);
 }
 
 .floor h3 {
     color: rgb(129, 162, 201);
 }
-.walls th, .walls button, .walls h3{
+.walls th, .walls button {
     background: rgb(129, 166, 212);
 }
 
@@ -365,7 +365,7 @@ table tr:hover td {
     color: rgb(129, 166, 212);
 }
 
-.window th, .window button, .window h3{
+.window th, .window button {
     background: #7594ba;
 }
 
@@ -429,3 +429,48 @@ h3 {
 .form-section button{
     margin-top: 10px;
 }
+
+
+/* الزرار */
+        .info-button {
+            background-color: black; /* خلفية سوداء */
+            	color: white; /* خط أبيض */
+            	font-size: 14px; /* حجم صغير */
+            	font-weight: bold; /* جعل الخط بولد */
+            	border: none;
+            border-radius: 50%;
+            width: 30px; /* الحجم أصغر من قبل */
+            	height: 30px; /* الحجم أصغر من قبل */
+            	display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* الأيقونة داخل الزرار */
+        .info-button i {
+            font-family: "Times New Roman", Times, serif; /* تغيير الخط لـ Times New Roman */
+            font-weight: bolder; /* جعل الأيقونة بولد ثقيل */
+            	font-size: 16px; /* حجم الأيقونة مناسب */
+        }
+
+        /* التولتيب */
+        .tooltip {
+            display: none;
+            position: absolute;
+            bottom: 40px; /* مكان التولتيب فوق الزرار */
+            	left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.9); /* خلفية التولتيب باللون الأسود */
+            	color: white; /* خط أبيض */
+            	padding: 10px;
+            border-radius: 5px;
+            font-size: 12px; /* حجم الخط داخل التولتيب */
+            	z-index: 9999;
+            width: auto; /* التولتيب يتناسب مع حجم النص */
+		height: 100px;
+            	max-width: 300px; /* أقصى عرض للتولتيب */
+            	text-align: left; /* محاذاة النص لليسار */
+            	word-wrap: break-word; /* لتقسيم النص إذا كان طويل */
+        }
