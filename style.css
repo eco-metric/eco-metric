@@ -342,22 +342,36 @@ table tr:hover td {
     cursor: pointer;
 }
 
-.foundation th, .foundation button, .foundation h3{
+.foundation th, .foundation button {
     background: rgb(83, 170, 192);
+}
+
+.foundation h3 {
+    color: rgb(83, 170, 192);
 }
 
 .floor th, .floor button, .floor h3{
     background: rgb(129, 162, 201);
 }
 
+.floor h3 {
+    color: rgb(129, 162, 201);
+}
 .walls th, .walls button, .walls h3{
     background: rgb(129, 166, 212);
+}
+
+.walls h3{
+    color: rgb(129, 166, 212);
 }
 
 .window th, .window button, .window h3{
     background: #7594ba;
 }
 
+.window h3{
+    color: #7594ba;
+}
 
 /* Result Input Fields */
 input[disabled] {
