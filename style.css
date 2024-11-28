@@ -432,21 +432,21 @@ h3 {
 
 
 /* الزرار */
-        .info-button {
-            background-color: black; /* خلفية سوداء */
-            	color: white; /* خط أبيض */
-            	font-size: 14px; /* حجم صغير */
-            	font-weight: bold; /* جعل الخط بولد */
-            	border: none;
-            border-radius: 50%;
-            width: 30px; /* الحجم أصغر من قبل */
-            	height: 30px; /* الحجم أصغر من قبل */
-            	display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            position: relative;
-        }
+.info-button {
+    	background-color: black; /* خلفية سوداء */
+	color: white; /* خط أبيض */
+	font-size: 14px; /* حجم صغير */
+	font-weight: bold; /* جعل الخط بولد */
+	border: none;
+    	border-radius: 50%;
+    	width: 20px; 
+	height: 20px; 
+	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	cursor: pointer;
+    	position: relative;
+}
 
         /* الأيقونة داخل الزرار */
         .info-button i {
