@@ -80,7 +80,9 @@ h2 {
 
 
 label {
-    display: block;
+    display: flex;
+	
+    align-items: center;
     font-size: 0.9em;
     color: #333;
     margin-top: 8px;
@@ -432,7 +434,6 @@ h3 {
 
 
 /* الزرار */
-/* الزرار */
         .info-button {
             background-color: black; /* خلفية الزرار */
             color: white; /* لون النص */
@@ -446,8 +447,11 @@ h3 {
             justify-content: center; /* محاذاة الأيقونة داخل الزرار */
             align-items: center; /* محاذاة الأيقونة داخل الزرار */
             cursor: pointer;
+	padding: 0;
         }
-
+        .info-button:hover {
+	    transform: translateY(0);
+}
         /* الأيقونة داخل الزرار */
         .info-button i {
             font-family: "Times New Roman", Times, serif; /* خط الأيقونة */
@@ -468,7 +472,7 @@ h3 {
             font-size: 12px; /* حجم الخط داخل التولتيب */
             	z-index: 9999;
             width: auto; /* التولتيب يتناسب مع حجم النص */
-		height: 100px;
+		height: 120px;
             	max-width: 300px; /* أقصى عرض للتولتيب */
             	text-align: left; /* محاذاة النص لليسار */
             	word-wrap: break-word; /* لتقسيم النص إذا كان طويل */
