@@ -2447,3 +2447,35 @@ document.addEventListener("keydown", function (e) {
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
+
+
+
+
+
+
+
+
+
+
+function toggleTooltip(event) {
+        var tooltip = document.getElementById('tooltip');
+        var isVisible = tooltip.style.display === 'block';
+
+        // إخفاء التولتيب إذا كان ظاهر بالفعل
+        if (isVisible) {
+            tooltip.style.display = 'none';
+        } else {
+            // عرض التولتيب
+            tooltip.style.display = 'block';
+            tooltip.style.left = event.pageX - 15 + 'px';  // موضع التولتيب بجانب الزرار
+            tooltip.style.top = event.pageY + 10 + 'px';  // قليلاً فوق الزرار
+        }
+    }
+
+    // إخفاء التولتيب إذا تم الضغط في مكان آخر
+    window.addEventListener('click', function(event) {
+        var tooltip = document.getElementById('tooltip');
+        if (!event.target.closest('.info-button')) {
+            tooltip.style.display = 'none';
+        }
+    });
