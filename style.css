@@ -432,27 +432,26 @@ h3 {
 
 
 /* الزرار */
-.info-button {
-    	background-color: black; /* خلفية سوداء */
-	color: white; /* خط أبيض */
-	font-size: 14px; /* حجم صغير */
-	font-weight: bold; /* جعل الخط بولد */
-	border: none;
-    	border-radius: 50%;
-    	width: 5px; 
-	height: 10px; 
-	display: flex;
-    	justify-content: center;
-    	align-items: center;
-    	cursor: pointer;
-    	position: relative;
-}
+/* الزرار */
+        .info-button {
+            background-color: black; /* خلفية الزرار */
+            color: white; /* لون النص */
+            font-size: 16px; /* حجم الأيقونة */
+            font-weight: bolder; /* جعل الأيقونة بولد */
+            border: none;
+            border-radius: 50%; /* لجعل الزرار دائري */
+            width: 24px; /* عرض الزرار */
+            height: 24px; /* ارتفاع الزرار */
+            display: flex;
+            justify-content: center; /* محاذاة الأيقونة داخل الزرار */
+            align-items: center; /* محاذاة الأيقونة داخل الزرار */
+            cursor: pointer;
+        }
 
         /* الأيقونة داخل الزرار */
         .info-button i {
-            font-family: "Times New Roman", Times, serif; /* تغيير الخط لـ Times New Roman */
-            font-weight: bolder; /* جعل الأيقونة بولد ثقيل */
-            	font-size: 16px; /* حجم الأيقونة مناسب */
+            font-family: "Times New Roman", Times, serif; /* خط الأيقونة */
+            font-size: 16px; /* حجم الأيقونة */
         }
 
         /* التولتيب */
