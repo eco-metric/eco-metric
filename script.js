@@ -31,7 +31,8 @@ function updateMaterialOptions() {
         options = [
             { name: 'Select name of material' },
             { name: 'Concrete Paving Solid and hollow Bricks', manufacturer: 'ERTEKAA (The enhancement of integrated services and waste recycling company)-Www.ertekaa.org', image: 'img/bricks/0.png' },
-            { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB', image: 'img/bricks/1.png' }
+            { name: 'Marmox Thermoblock 14/10', manufacturer: 'Marmox Egypt - CMB', image: 'img/bricks/1.png' },
+            { name: 'AAC blocks', manufacturer: 'National Industries Company', image: 'img/bricks/2.png' }
         ];
     } else if (classification === 'plaster') {
         options = [
@@ -43,7 +44,9 @@ function updateMaterialOptions() {
     } else if (classification === 'insulation') {
         options = [
             { name: 'Select name of material' },
-            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', manufacturer: 'Marmox Egypt - CMB', image: 'img/insulation/0.png' }
+            { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', manufacturer: 'Marmox Egypt - CMB', image: 'img/insulation/0.png' },
+            { name: 'EPS', manufacturer: 'N/A', image: 'img/insulation/1.png' },
+            { name: 'mineral wool', manufacturer: 'Saudi International Insulation manufacturing company (SIIMCO)', image: 'img/insulation/2.png' }
         ];
     } else if (classification === 'cement') {
         options = [
@@ -67,6 +70,11 @@ function updateMaterialOptions() {
         options = [
             { name: 'Select name of material' },
             { name: 'Reinforcing steel bars', manufacturer: 'Al Ezz Dekheila Steel Co. - Alexandria (EZDK) El Dekheila', image: 'img/steel/0.png' }
+        ];
+    } else if (classification === 'ceramic') {
+        options = [
+            { name: 'Select name of material' },
+            { name: 'Ceramic tiles', manufacturer: 'ALFANAR FACTORY FOR CERAMIC & PORCELAIN', image: 'img/steel/0.png' }
         ];
     }
 
@@ -163,6 +171,7 @@ function updateSubcategories() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification === 'plaster') {
         suboptions = [
@@ -178,7 +187,9 @@ function updateSubcategories() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification === 'cement') {
         suboptions = [
@@ -221,6 +232,11 @@ function updateSubcategories() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -313,6 +329,7 @@ function updateSubcategories_t2() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t2 === 'plaster') {
         suboptions = [
@@ -328,7 +345,9 @@ function updateSubcategories_t2() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t2 === 'cement') {
         suboptions = [
@@ -371,6 +390,11 @@ function updateSubcategories_t2() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t2 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -461,6 +485,7 @@ function updateSubcategories_t3() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t3 === 'plaster') {
         suboptions = [
@@ -476,7 +501,9 @@ function updateSubcategories_t3() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t3 === 'cement') {
         suboptions = [
@@ -519,6 +546,11 @@ function updateSubcategories_t3() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t3 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -608,6 +640,7 @@ function updateSubcategories_t4() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t4 === 'plaster') {
         suboptions = [
@@ -623,7 +656,9 @@ function updateSubcategories_t4() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t4 === 'cement') {
         suboptions = [
@@ -665,6 +700,11 @@ function updateSubcategories_t4() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t4 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -755,6 +795,7 @@ function updateSubcategories_t5() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t5 === 'plaster') {
         suboptions = [
@@ -770,7 +811,9 @@ function updateSubcategories_t5() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t5 === 'cement') {
         suboptions = [
@@ -812,6 +855,11 @@ function updateSubcategories_t5() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t5 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -902,6 +950,7 @@ function updateSubcategories_t6() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t6 === 'plaster') {
         suboptions = [
@@ -917,7 +966,9 @@ function updateSubcategories_t6() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t6 === 'cement') {
         suboptions = [
@@ -960,6 +1011,11 @@ function updateSubcategories_t6() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t6 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -1050,6 +1106,7 @@ function updateSubcategories_t7() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t7 === 'plaster') {
         suboptions = [
@@ -1065,7 +1122,9 @@ function updateSubcategories_t7() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t7 === 'cement') {
         suboptions = [
@@ -1108,6 +1167,11 @@ function updateSubcategories_t7() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t7 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -1197,6 +1261,7 @@ function updateSubcategories_t8() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t8 === 'plaster') {
         suboptions = [
@@ -1212,7 +1277,9 @@ function updateSubcategories_t8() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t8 === 'cement') {
         suboptions = [
@@ -1255,6 +1322,11 @@ function updateSubcategories_t8() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t8 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -1344,6 +1416,7 @@ function updateSubcategories_t9() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t8 === 'plaster') {
         suboptions = [
@@ -1359,7 +1432,9 @@ function updateSubcategories_t9() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t8 === 'cement') {
         suboptions = [
@@ -1403,6 +1478,11 @@ function updateSubcategories_t9() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t8 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -1494,6 +1574,7 @@ function updateSubcategories_t9() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t9 === 'plaster') {
         suboptions = [
@@ -1509,7 +1590,9 @@ function updateSubcategories_t9() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t9 === 'cement') {
         suboptions = [
@@ -1553,6 +1636,11 @@ function updateSubcategories_t9() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t9 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -1645,6 +1733,7 @@ function updateSubcategories_t10() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t10 === 'plaster') {
         suboptions = [
@@ -1660,7 +1749,9 @@ function updateSubcategories_t10() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t10 === 'cement') {
         suboptions = [
@@ -1703,6 +1794,11 @@ function updateSubcategories_t10() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t10 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -1793,6 +1889,7 @@ function updateSubcategories_t11() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t11 === 'plaster') {
         suboptions = [
@@ -1808,7 +1905,9 @@ function updateSubcategories_t11() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t11 === 'cement') {
         suboptions = [
@@ -1851,6 +1950,11 @@ function updateSubcategories_t11() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t11 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -1941,6 +2045,7 @@ function updateSubcategories_t12() {
             { name: 'Concrete Paving Solid and hollow Bricks', place: 'New Capital, Cairo Egypt', unit: '1 m3', indicators: ['1.36E2', '7.51E‐6', '3.71E‐1', '1.12E‐1', '1.49E‐2', '4,79E‐4', '9.22E2', 'A4'] },
             { name: 'Marmox Thermoblock 14/10', place: 'Egypt', unit: '1 unit of Masonry Block (600 mm useable length x 140 mm Width x 100 mm Hight)', indicators: ['6.15E+00', '6.85E‐07', '3.03E‐02', '0.00054', '2.36E‐02', '6.91E‐05', '1.15E+02', 'A4'] },
             { name: 'red brick (generic data)', place: '', unit: '1 kg', indicators: ['0.24', '', '', '', '', '', '', ''] },
+            { name: 'AAC blocks', place: 'Kwait', unit: '1 m3', indicators: ['190', '0.0000111', '0.894', '1.39', '0.44', '0.000113', '1550', 'A4'] }
         ];
     } else if (classification_t12 === 'plaster') {
         suboptions = [
@@ -1956,7 +2061,9 @@ function updateSubcategories_t12() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Marmox Tile Backer Board-insulation board 12.5 thickness', place: 'Egypt', unit: '1 m2  of board thickness 12.5 mm', indicators: ['2.28E0', '1.17E‐7', '9.19E‐3', '1.75E‐3', '5.01E‐4', '1.06E‐4', '4.99E1', 'A4'] },
-            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] }
+            { name: 'Bitumen', place: '', unit: '1 kg', indicators: ['0.55', '', '', '', '', '', '', ''] },
+            { name: 'EPS', place: 'N/A', unit: '1 m3', indicators: ['39', '0.00000034', '0.156', '0.0159', '0.0755', '0.00000601', '959', ''] },
+            { name: 'mineral wool', place: 'Saudi Arabia', unit: '1 m2', indicators: ['5,37E+00', '6,87E-07', '1,68E-02', '2,31E-03', '1,42E-03', '1,48E-06', '8,72E+01', ''] }
         ];
     } else if (classification_t12 === 'cement') {
         suboptions = [
@@ -2000,6 +2107,11 @@ function updateSubcategories_t12() {
         suboptions = [
             { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
             { name: 'Timber', place: '', unit: '1 kg', indicators: ['0.72', '', '', '', '', '', '', ''] }
+        ];
+    } else if (classification_t12 === 'ceramic') {
+        suboptions = [
+            { name: 'Select name of material', place: '', unit: '', indicators: ['', '', '', '', '', '', '', ''] },
+            { name: 'Ceramic tiles', place: 'Saudi Arabia', unit: '1 m2', indicators: ['2,01E+01', '0.000000021', '0.11', '0.18', '0.05', '0.000072', '2,98E+02', ''] }
         ];
     }
 
@@ -2277,9 +2389,8 @@ function calculateTotalResults_Window(event) {
 
 
 // حساب القيم في آخر صف الخاص بالـ Total Impact
-document.getElementById("btnTtotalImpact").addEventListener("click", function () {
-      event.preventDefault();
-
+document.getElementById("btnTotalImpact").addEventListener("click", function (event) {
+    event.preventDefault();
     // Function to calculate the total for a given set of IDs
     function calculateTotal(impactId, resultIds) {
         let total = 0;
