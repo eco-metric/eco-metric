@@ -201,6 +201,18 @@
 
                     <div class="quantity-table">
                         <label>Input data for this part:</label>
+                        <!-- الزرار -->
+                        <center><button class="info-button" onclick="toggleTooltip(event)">
+                            <i>i</i> <!-- أيقونة info -->
+                        </button></center>
+                        
+                        <!-- التولتيب -->
+                        <div class="tooltip" id="tooltip">
+                            <strong>Information:</strong><br>
+                            1- <strong>Qty:</strong> please enter the quantity of materials.<br>
+                            2- <strong>Distance:</strong> please enter the distance from the material production location to the project site (using Google maps link OR the distance guide above).<br>
+                            3- <strong>Fuel type:</strong> please enter type of the transportation fuel.
+                        </div>
                         <table>
                             <tr>
                                 <th>Qty</th>
