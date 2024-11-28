@@ -342,19 +342,19 @@ table tr:hover td {
     cursor: pointer;
 }
 
-.foundation th, .foundation button{
+.foundation th, .foundation button, .foundation h3{
     background: rgb(83, 170, 192);
 }
 
-.floor th, .floor button{
+.floor th, .floor button, .floor h3{
     background: rgb(129, 162, 201);
 }
 
-.walls th, .walls button{
+.walls th, .walls button, .walls h3{
     background: rgb(129, 166, 212);
 }
 
-.window th, .window button{
+.window th, .window button, .window h3{
     background: #7594ba;
 }
 
