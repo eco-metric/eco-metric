@@ -353,6 +353,7 @@ table tr:hover td {
 }
 
 .foundation{
+	margin-top: 20px;
 	box-shadow: 0 0 10px rgba(0, 90, 188); /* تأثير الإضاءة/الظل */
 }
 
