@@ -345,26 +345,26 @@ table tr:hover td {
 }
 
 .foundation th, .foundation button {
-    background: rgb(83, 170, 192);
+    background: #0070E9;
 }
 
 .foundation h3 {
-    color: rgb(83, 170, 192);
+    color: #0070E9;
 }
 
 .floor th, .floor button{
-    background: rgb(129, 162, 201);
+    background: #0070E9;
 }
 
 .floor h3 {
-    color: rgb(129, 162, 201);
+    color: #0070E9;
 }
 .walls th, .walls button {
-    background: rgb(129, 166, 212);
+    background: #0070E9;
 }
 
 .walls h3{
-    color: rgb(129, 166, 212);
+    color: #0070E9;
 }
 
 .window th, .window button {
