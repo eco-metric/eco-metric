@@ -232,7 +232,7 @@ body {
 }
 
 /* Form and Select Styling */
-.form-section, .phase-one, .phase-two {
+.form-section, .phase-one, .phase-two, .phase-three {
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 12px;
