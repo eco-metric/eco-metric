@@ -345,11 +345,11 @@ table tr:hover td {
 }
 
 .foundation th, .foundation button {
-    background: rgb(0, 90, 188);
+    background-color: rgb(51, 140, 255);
 }
 
 .foundation h3 {
-    color: rgb(0, 90, 188);
+    color: rgb(51, 140, 255);
 }
 
 .foundation{
@@ -357,22 +357,22 @@ table tr:hover td {
 }
 
 .floor th, .floor button{
-    background: rgb(25, 115, 200);
+	background-color: rgb(51, 140, 255);
 }
 
 .floor h3 {
-    color: rgb(25, 115, 200);
+    color: rgb(51, 140, 255);
 }
 
 .floor{
 	box-shadow: 0 0 10px rgba(25, 115, 200); /* تأثير الإضاءة/الظل */
 }
 .walls th, .walls button {
-    background: rgb(0, 100, 200);
+	background-color: rgb(51, 140, 255);
 }
 
 .walls h3{
-    color: rgb(0, 100, 200);
+	color: rgb(51, 140, 255);
 }
 
 .walls{
@@ -380,11 +380,11 @@ table tr:hover td {
 }
 
 .window th, .window button {
-    background: rgb(50, 100, 150);
+    background-color: rgb(51, 140, 255);
 }
 
 .window h3{
-    color: rgb(50, 100, 150);
+	color: rgb(51, 140, 255);
 }
 
 .window{
