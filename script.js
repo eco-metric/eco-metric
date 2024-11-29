@@ -74,7 +74,7 @@ function updateMaterialOptions() {
     } else if (classification === 'ceramic') {
         options = [
             { name: 'Select name of material' },
-            { name: 'Ceramic tiles', manufacturer: 'ALFANAR FACTORY FOR CERAMIC & PORCELAIN', image: 'img/steel/0.png' }
+            { name: 'Ceramic tiles', manufacturer: 'ALFANAR FACTORY FOR CERAMIC & PORCELAIN', image: 'img/ceramic/0.png' }
         ];
     }
 
