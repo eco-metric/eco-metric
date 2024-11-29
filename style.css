@@ -352,6 +352,10 @@ table tr:hover td {
     color: rgb(0, 90, 188);
 }
 
+.foundation{
+	box-shadow: 0 0 10px rgba(0, 90, 188); /* تأثير الإضاءة/الظل */
+}
+
 .floor th, .floor button{
     background: rgb(25, 115, 200);
 }
@@ -360,6 +364,9 @@ table tr:hover td {
     color: rgb(25, 115, 200);
 }
 
+.floor{
+	box-shadow: 0 0 10px rgba(25, 115, 200); /* تأثير الإضاءة/الظل */
+}
 .walls th, .walls button {
     background: rgb(0, 100, 200);
 }
@@ -368,12 +375,20 @@ table tr:hover td {
     color: rgb(0, 100, 200);
 }
 
+.walls{
+	box-shadow: 0 0 10px rgba(0, 100, 200); /* تأثير الإضاءة/الظل */
+}
+
 .window th, .window button {
     background: rgb(50, 100, 150);
 }
 
 .window h3{
     color: rgb(50, 100, 150);
+}
+
+.window{
+	box-shadow: 0 0 10px rgba(50, 100, 150); /* تأثير الإضاءة/الظل */
 }
 
 /* Result Input Fields */
