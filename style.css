@@ -345,34 +345,35 @@ table tr:hover td {
 }
 
 .foundation th, .foundation button {
-    background: #0070E9;
+    background: rgb(0, 90, 188);
 }
 
 .foundation h3 {
-    color: #0070E9;
+    color: rgb(0, 90, 188);
 }
 
 .floor th, .floor button{
-    background: #0070E9;
+    background: rgb(25, 115, 200);
 }
 
 .floor h3 {
-    color: #0070E9;
+    color: rgb(25, 115, 200);
 }
+
 .walls th, .walls button {
-    background: #0070E9;
+    background: rgb(0, 100, 200);
 }
 
 .walls h3{
-    color: #0070E9;
+    color: rgb(0, 100, 200);
 }
 
 .window th, .window button {
-    background: #7594ba;
+    background: rgb(50, 100, 150);
 }
 
 .window h3{
-    color: #7594ba;
+    color: rgb(50, 100, 150);
 }
 
 /* Result Input Fields */
