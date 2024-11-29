@@ -344,53 +344,75 @@ table tr:hover td {
     cursor: pointer;
 }
 
-.foundation th, .foundation button {
-    background-color: rgb(51, 140, 255);
+.foundation table, .foundation button,
+.floor table, .floor button,
+.walls table, .walls button,
+.window table, .window button{
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease-in-out;
+	
 }
 
-.foundation h3 {
-    color: rgb(51, 140, 255);
+.foundation table:hover, .foundation button:hover,
+.floor table:hover, .floor button:hover,
+.walls table:hover, .walls button:hover,
+.window table:hover, .window button:hover{
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-.foundation{
-	margin-top: 20px;
-	box-shadow: 0 0 10px rgba(0, 90, 188); /* تأثير الإضاءة/الظل */
-}
+ .foundation table:nth-child(1) {
+      background: linear-gradient(45deg, rgb(0, 112, 233), rgb(51, 140, 255));
+    }
 
-.floor th, .floor button{
-	background-color: rgb(51, 140, 255);
-}
+  .foundation table:nth-child(2) {
+      background: linear-gradient(45deg, rgb(0, 90, 188), rgb(51, 140, 255));
+    }
 
-.floor h3 {
-    color: rgb(51, 140, 255);
-}
+  .foundation table:nth-child(3) {
+      background: linear-gradient(45deg, rgb(51, 140, 255), rgb(0, 112, 233));
+    }
 
-.floor{
-	box-shadow: 0 0 10px rgba(25, 115, 200); /* تأثير الإضاءة/الظل */
-}
-.walls th, .walls button {
-	background-color: rgb(51, 140, 255);
-}
+.floor table:nth-child(1) {
+      background: linear-gradient(45deg, rgb(56, 178, 85), rgb(87, 220, 125));
+    }
 
-.walls h3{
-	color: rgb(51, 140, 255);
-}
+.floor table:nth-child(2) {
+      background: linear-gradient(45deg, rgb(45, 140, 67), rgb(87, 220, 125));
+    }
 
-.walls{
-	box-shadow: 0 0 10px rgba(0, 100, 200); /* تأثير الإضاءة/الظل */
-}
+.floor table:nth-child(3) {
+      background: linear-gradient(45deg, rgb(87, 220, 125), rgb(56, 178, 85));
+    }
 
-.window th, .window button {
-    background-color: rgb(51, 140, 255);
-}
 
-.window h3{
-	color: rgb(51, 140, 255);
-}
+.walls table:nth-child(1) {
+      background: linear-gradient(45deg, rgb(145, 42, 234), rgb(176, 100, 255));
+    }
 
-.window{
-	box-shadow: 0 0 10px rgba(50, 100, 150); /* تأثير الإضاءة/الظل */
-}
+.walls table:nth-child(2) {
+      background: linear-gradient(45deg, rgb(115, 35, 180), rgb(176, 100, 255));
+    }
+
+.walls table:nth-child(3) {
+      background: linear-gradient(45deg, rgb(176, 100, 255), rgb(145, 42, 234));
+    }
+
+
+.window table:nth-child(1) {
+      background: linear-gradient(45deg, rgb(255, 87, 34), rgb(255, 145, 77));
+    }
+
+.window table:nth-child(2) {
+      background: linear-gradient(45deg, rgb(204, 70, 25), rgb(255, 145, 77));
+    }
+
+.window table:nth-child(3) {
+      background: linear-gradient(45deg, rgb(255, 145, 77), rgb(255, 87, 34));
+    }
+
+
 
 /* Result Input Fields */
 input[disabled] {
