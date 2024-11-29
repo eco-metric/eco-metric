@@ -39,9 +39,6 @@ h2 {
     margin-bottom: 40px;
 }
 
-.blankCell {
-    background-color: #e6f7ff;
-}
 
 .indicators {
     background-color: #e6f7ff;
@@ -344,73 +341,6 @@ table tr:hover td {
     cursor: pointer;
 }
 
-.foundation table, .foundation button,
-.floor table, .floor button,
-.walls table, .walls button,
-.window table, .window button{
-      border-radius: 10px;
-      border: none;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s ease-in-out;
-	
-}
-
-.foundation table:hover, .foundation button:hover,
-.floor table:hover, .floor button:hover,
-.walls table:hover, .walls button:hover,
-.window table:hover, .window button:hover{
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
-
- .foundation table:nth-child(1) {
-      background: linear-gradient(45deg, rgb(0, 112, 233), rgb(51, 140, 255));
-    }
-
-  .foundation table:nth-child(2) {
-      background: linear-gradient(45deg, rgb(0, 90, 188), rgb(51, 140, 255));
-    }
-
-  .foundation table:nth-child(3) {
-      background: linear-gradient(45deg, rgb(51, 140, 255), rgb(0, 112, 233));
-    }
-
-.floor table:nth-child(1) {
-      background: linear-gradient(45deg, rgb(56, 178, 85), rgb(87, 220, 125));
-    }
-
-.floor table:nth-child(2) {
-      background: linear-gradient(45deg, rgb(45, 140, 67), rgb(87, 220, 125));
-    }
-
-.floor table:nth-child(3) {
-      background: linear-gradient(45deg, rgb(87, 220, 125), rgb(56, 178, 85));
-    }
-
-
-.walls table:nth-child(1) {
-      background: linear-gradient(45deg, rgb(145, 42, 234), rgb(176, 100, 255));
-    }
-
-.walls table:nth-child(2) {
-      background: linear-gradient(45deg, rgb(115, 35, 180), rgb(176, 100, 255));
-    }
-
-.walls table:nth-child(3) {
-      background: linear-gradient(45deg, rgb(176, 100, 255), rgb(145, 42, 234));
-    }
-
-
-.window table:nth-child(1) {
-      background: linear-gradient(45deg, rgb(255, 87, 34), rgb(255, 145, 77));
-    }
-
-.window table:nth-child(2) {
-      background: linear-gradient(45deg, rgb(204, 70, 25), rgb(255, 145, 77));
-    }
-
-.window table:nth-child(3) {
-      background: linear-gradient(45deg, rgb(255, 145, 77), rgb(255, 87, 34));
-    }
 
 
 
@@ -423,7 +353,6 @@ input[disabled] {
 /* Table Footer Styling */
 table .blankCell {
     background-color: transparent;
-    border: none;
 }
 
 .contain-totalImpact{
@@ -516,3 +445,101 @@ h3 {
             	text-align: left; /* محاذاة النص لليسار */
             	word-wrap: break-word; /* لتقسيم النص إذا كان طويل */
         }
+
+
+
+
+
+
+
+
+
+
+/* إعدادات عامة */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+
+/* الجروب الأول - Foundation (أزرق) */
+.foundation th, .foundation button{
+  background: linear-gradient(45deg, rgb(0, 112, 233), rgb(51, 140, 255)); /* تدرج أزرق */
+  color: white;
+}
+
+.foundation h3{
+   color: rgb(51, 140, 255);
+}
+
+
+/* الجروب الثاني - Floor (أخضر) */
+.floor th, .floor button {
+  background: linear-gradient(45deg, rgb(56, 178, 85), rgb(87, 220, 125)); /* تدرج أخضر */
+  color: white;
+}
+
+.floor h3{
+   color: rgb(56, 178, 85);
+}
+
+/* الجروب الثالث - Walls (أرجواني) */
+.walls th, .walls button {
+  background: linear-gradient(45deg, rgb(145, 42, 234), rgb(176, 100, 255)); /* تدرج أرجواني */
+  color: white;
+}
+
+.walls h3{
+   color: rgb(176, 100, 255)
+}
+
+/* الجروب الرابع - Window (برتقالي) */
+.window th, .window button {
+  background: linear-gradient(45deg, rgb(255, 87, 34), rgb(255, 145, 77)); /* تدرج برتقالي */
+  color: white;
+}
+
+
+.window h3{
+   color: rgb(255, 145, 77)
+}
+
+/* تأثير تفاعل عند المرور على الجدول */
+th:hover, td:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+
+
+
+/* خصائص مشتركة بين جميع المجموعات */
+.foundation, .floor, .walls, .window {
+  border: 4px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* ظل عام */
+}
+
+/* تدرجات الألوان لكل مجموعة */
+
+/* مجموعة Foundation */
+.foundation {
+  box-shadow: 0 4px 12px rgba(0, 112, 233, 0.4); /* ظل أزرق */
+}
+
+/* مجموعة Floor */
+.floor {
+  box-shadow: 0 4px 12px rgba(56, 178, 85, 0.4); /* ظل أخضر */
+}
+
+/* مجموعة Walls */
+.walls {
+  box-shadow: 0 4px 12px rgba(145, 42, 234, 0.4); /* ظل أرجواني */
+}
+
+/* مجموعة Window */
+.window {
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4); /* ظل برتقالي */
+}
